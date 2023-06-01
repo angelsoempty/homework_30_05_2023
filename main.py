@@ -6,6 +6,7 @@ def get_html(url):
 url = "http://example.com"
 html = get_html(url)
 soup = BeautifulSoup(html, 'html.parser')
-h2_elements = soup.find_all('h2')
-for h2 in h2_elements:
-    print(h2.get_text())
+table_elements = soup.find_all('table')
+for table in table_elements:
+    print(table)
+    print()
